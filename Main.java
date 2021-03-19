@@ -11,26 +11,30 @@ public class Main {
       ArrayList<Loan> list = readData(file);
       
       // Loop to print out the existing data to see how it is structured.
-      //for(int i = 0; i < list.size(); i++) {
-      //   System.out.println(list.get(i));
+      //for(int i = 0; i < list.size(); i++) 
+      //{
+         //System.out.println(list.get(i));
       //}
       
       //Use this code to test the methods in the ComputingStatistics class
+      //
       ComputingStatistics analysis = new ComputingStatistics(list);
-      System.out.println(analysis.totalAmount());
-//       System.out.println(analysis.avgLoan());
-//       System.out.println(analysis.largestLoan());
-//       System.out.println(analysis.smallestLoan());
-//       System.out.println(analysis.largestLoanCountry());
-//       System.out.println(analysis.smallestLoanCountry());
-//       System.out.println(analysis.avgDaysToFund());
-//       System.out.println(analysis.largestLoanKenya());
-//       System.out.println(analysis.avgLoanPhilippines());
-//       System.out.println(analysis.longestToFundCountry());
-//       System.out.println(analysis.variance());
-//       System.out.println(analysis.standardDeviation());
-//       System.out.println(analysis.empiricalRule());
+      System.out.println("total: " + analysis.totalAmount());
+         System.out.println("average loan: " + analysis.avgLoan());
+         System.out.println("largest loan: " + analysis.largestLoan());
+         System.out.println("smallest loan: " + analysis.smallestLoan());
+         System.out.println("country with the largest loan: " + analysis.largestLoanCountry());
+         System.out.println("country with the smallest laon: " + analysis.smallestLoanCountry());
+         System.out.println("average days: " + analysis.avgDaysToFund());
+         System.out.println("largest loan for kenya: " + analysis.largestLoanKenya());
+         System.out.println("average loan philippines: " + analysis.avgLoanPhilippines());
+         System.out.println("longest to fund country: " + analysis.longestToFundCountry());
+         System.out.println("variance: " + analysis.variance());
+         System.out.println("standard deviation: " + analysis.standardDeviation());
+         System.out.println("empirical rule: " + analysis.empiricalRule());
+         
    }
+   
    
    
    /**
